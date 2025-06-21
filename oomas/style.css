@@ -1,0 +1,154 @@
+/* General body style with a soft green-yellow gradient background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f6ffed, #fff9d1); /* soft green to yellow */
+    color: #000; /* black text for good readability */
+}
+
+/* Header section with bold black and white contrast */
+.header {
+    background-color: #000; /* black */
+    color: #fff; /* white text */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid #ffcc00; /* bright yellow accent */
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* makes it circular */
+    object-fit: cover; /* crops the image to fit the circle */
+    margin-bottom: 10px;
+    border: 3px solid #fff; /* optional: adds white border for contrast */
+    background-color: #fff; /* optional: ensures clean edges */
+}
+
+
+/* Navigation bar with bold white/yellow links */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffcc00; /* yellow links */
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #32cd32; /* lime green hover */
+}
+
+/* About section */
+.about {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Product section */
+.products {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.products h2 {
+    text-align: center;
+    color: #006400; /* dark green */
+    margin-bottom: 25px;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #000; /* black border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    background-color: #006400; /* deep green */
+    color: #fff;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 5px solid #ffcc00; /* yellow accent */
+}
+
+/* Center the contact box */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 70vh;
+}
+
+.contact-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.contact-box h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.contact-box a {
+    text-decoration: none;
+    color: #00a651;
+    font-weight: bold;
+}
+
+.contact-box i {
+    margin-right: 10px;
+    color: #000;
+}
+
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* center horizontally */
+    gap: 20px; /* space between logo and text */
+    padding: 20px 0;
+}

@@ -15,16 +15,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Orders</title>
+        <link rel="stylesheet" href="style.css"> 
     </head>
 <body>
-    <div class="header">
+     <div class="header">
         <header>
+            <img src="images/oomaslogo.jpg" alt="Oomas Jamaican Goodies Logo" class="logo">
             <h1>Oomas Jamaican Goodies</h1>
+            <p>Authentic homemade baked treats made with love since 2021.</p>
             <p>Yummy Jamaican Goodies! Made by Ooma with love. 🇯🇲</p>
         </header>
-
         <nav>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
+            <a href="products.html">Products</a> 
             <a href="contact.html">Contact</a>
             <a href="order.php">Order Here</a>
         </nav>
@@ -51,6 +55,9 @@
         </form>
     </section>
 
+    <footer class="foot">
+        <p>&copy; 2025 Oomas Jamaican Goodies. All rights reserved</p>
+    </footer>
 
 </body>
 </html>
