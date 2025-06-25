@@ -3,30 +3,27 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #f6ffed, #fff9d1); /* soft green to yellow */
-    color: #000; /* black text for good readability */
+    background: linear-gradient(to bottom right, #f6ffed, #fff9d1); 
+    color: #000; 
 }
 
 /* Header section with bold black and white contrast */
 .header {
-    background-color: #000; /* black */
-    color: #fff; /* white text */
+    background-color: #000;
+    color: #fff; 
     text-align: center;
     padding: 20px;
-    border-bottom: 5px solid #ffcc00; /* bright yellow accent */
+    border-bottom: 5px solid #ffcc00; 
 }
 
 .logo {
    width: 120px;
     height: 120px;
-    border-radius: 50%; /* makes it circular */
-    object-fit: cover; /* crops the image to fit the circle */
+    border-radius: 50%; 
+    object-fit: cover; 
     margin-bottom: 10px;
-    border: 3px solid #fff; /* optional: adds white border for contrast */
-    background-color: #fff; /* optional: ensures clean edges */
 }
 
-/* Navigation bar with bold white/yellow links */
 nav {
     margin-top: 10px;
 }
@@ -34,14 +31,14 @@ nav {
 nav a {
     margin: 0 15px;
     text-decoration: none;
-    color: #ffcc00; /* yellow links */
+    color: #ffcc00; 
     font-weight: bold;
     font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #32cd32; /* lime green hover */
+    color: #32cd32; 
 }
 
 .products-container {

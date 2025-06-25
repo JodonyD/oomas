@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="header">
+    <header class="header-content">
+      <img src="images/oomaslogo.jpg" alt="Oomas Jamaican Goodies Logo" class="logo" />
+      <div class="header-text">
+        <h1>Oomas Jamaican Goodies</h1>
+        <p>Authentic homemade baked treats made with love since 2021.</p>
+        <p>Yummy Jamaican Goodies! Made by Ooma with love. 🇯🇲</p>
+      </div>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="order.html" class="active">Order Here</a>
+    </nav>
+  </div>
+
+  <section class="form">
+    <form>
+      <h2>Place your order here!</h2>
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" placeholder="First Name" required />
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Last Name" required />
+
+      <label for="order">Order Description</label>
+      <textarea id="order" name="order" placeholder="E.g. 3 banana breads, 1 fruit cake" required></textarea>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <a href="https://wa.me/18768693164?text=Hi%20Ooma!%20I'd%20like%20to%20place%20an%20order" target="_blank" rel="noopener"><button type="button" id="b">📱 Message Us on WhatsApp</button></a>
+    </form>
+  </section>
+
+  <footer class="foot">
+    <hr />
+    <p>&copy; 2025 Oomas Jamaican Goodies. All rights reserved</p>
+  </footer>
+
+</body>
+</html>
