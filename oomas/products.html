@@ -3,10 +3,11 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Oomas Jamaican Goodies</title>
     <link rel="stylesheet" href="styles.css"> 
+    <title>Oomas Jamaican Goodies-contact</title>
     </head>
 <body>
+    <!--header-->
      <div class="header">
         <header>
             <img src="images/oomaslogo.jpg" alt="Oomas Jamaican Goodies Logo" class="logo">
@@ -23,12 +24,14 @@
         </nav>
     </div>
 
+    <!--products-->
     <div class="products-container">
         <div class="products-title">
             <h2>Our Delicious Products</h2>
             <p>Authentic Jamaican treats made with traditional recipes and lots of love</p>
         </div>
 
+        <!--fruit cake images-->
         <div class="products-grid">
             <div class="product-card">
                 <div class="bakegoods">🇯🇲</div>
@@ -52,6 +55,7 @@
                 </div>
             </div>
 
+            <!--banana bread images-->
             <div class="product-card">
                 <div class="bakegoods">🇯🇲</div>
                 <div class="image-gallery">
@@ -74,6 +78,7 @@
                 </div>
             </div>
 
+            <!--pudding images-->
             <div class="product-card">
                 <div class="bakegoods">🇯🇲</div>
                 <div class="image-gallery">
@@ -82,12 +87,12 @@
                         <img src="images/pudding2.jpg" alt="Sweet Potato Pudding - Whole" class="product-image">
                         <img src="images/pudding3.jpg" alt="Sweet Potato Pudding - Close-up" class="product-image">
                     </div>
-                    <button class="gallery-nav gallery-prev" onclick="changeImage('gallery-4', -1)">‹</button>
-                    <button class="gallery-nav gallery-next" onclick="changeImage('gallery-4', 1)">›</button>
+                    <button class="gallery-nav gallery-prev" onclick="changeImage('gallery-3', -1)">‹</button>
+                    <button class="gallery-nav gallery-next" onclick="changeImage('gallery-3', 1)">›</button>
                     <div class="gallery-dots">
-                        <span class="gallery-dot active" onclick="currentImage('gallery-4', 1)"></span>
-                        <span class="gallery-dot" onclick="currentImage('gallery-4', 2)"></span>
-                        <span class="gallery-dot" onclick="currentImage('gallery-4', 3)"></span>
+                        <span class="gallery-dot active" onclick="currentImage('gallery-3', 1)"></span>
+                        <span class="gallery-dot" onclick="currentImage('gallery-3', 2)"></span>
+                        <span class="gallery-dot" onclick="currentImage('gallery-3', 3)"></span>
                     </div>
                 </div>
                 <div class="product-info">
@@ -102,7 +107,7 @@
         // Gallery functionality
         const galleries = {};
 
-        // Initialize galleries
+        // initialize galleries
         document.addEventListener('DOMContentLoaded', function() {
             const galleryContainers = document.querySelectorAll('.gallery-container');
             galleryContainers.forEach(container => {
@@ -144,21 +149,21 @@
             const translateX = -gallery.currentSlide * 100;
             container.style.transform = `translateX(${translateX}%)`;
             
-            // Update dots
+            // update dots
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === gallery.currentSlide);
             });
         }
 
-        // Auto-play galleries (optional)
+        // auto play each images
         setInterval(() => {
             Object.keys(galleries).forEach(galleryId => {
                 changeImage(galleryId, 1);
             });
-        }, 5000); // Change image every 5 seconds
+        }, 7000); // change image every 7 seconds
     </script>
 
-     <!-- Footer -->
+     <!-- footer -->
     <footer class="foot">
         <hr>
         <p>&copy; 2025 Oomas Jamaican Goodies. All rights reserved</p>
