@@ -147,3 +147,75 @@ footer {
     margin-bottom: 10px;
     border: 3px solid #fff;
 }
+
+/* ------------------------------------------- */
+/* Media Queries for Responsiveness           */
+/* ------------------------------------------- */
+
+/* for small devices (phones, 576px and down) - these styles are already implied by the default */
+@media (max-width: 575px) {
+    header {
+        padding: 1rem; /* reduce padding even more for very small screens */
+    }
+    nav a {
+        display: block; /* stack nav links vertically */
+        margin: 0.5rem 0; /* add vertical margin */
+    }
+    h2 {
+        font-size: 1.5rem; /* smaller h2 for small screens */
+    }
+    .contact-box {
+        padding: 1rem; /* smaller padding for small screens */
+    }
+}
+
+
+/* for medium devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+    header {
+        padding: 1.5rem 2rem;
+    }
+    nav a {
+        margin: 0 1rem;
+        display: inline-block; /* keep nav links inline */
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .about-container {
+        flex-direction: row; /* switch to row layout for about on tablets and up */
+        text-align: left; /* align text to left when in row */
+    }
+    .me img {
+        width: 180px; /* original size */
+        height: 180px;
+        margin-right: 2rem; /* space to the right of the image */
+        margin-bottom: 0; /* remove bottom margin when in row */
+    }
+}
+
+/* for large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    header {
+        padding: 2rem 3rem; /* more padding for large screens */
+    }
+    nav a {
+        margin: 0 1.5rem;
+    }
+    section {
+        padding: 2rem; /* original padding */
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* for extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    section {
+        padding: 2.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+}
