@@ -1,221 +1,308 @@
-/* General body style with a soft green-yellow gradient background */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom right, #f6ffed, #fff9d1); 
-    color: #000; 
+/* Box-sizing for better responsive behavior */
+* {
+    box-sizing: border-box;
 }
 
-/* Header section with bold black and white contrast */
-.header {
-    background-color: #000;
-    color: #fff; 
-    text-align: center;
-    padding: 20px;
-    border-bottom: 5px solid #ffcc00; 
-}
+/* General body style with a soft green-yellow gradient background */ 
+body {     
+    font-family: Arial, sans-serif;     
+    margin: 0;     
+    padding: 0;     
+    background: linear-gradient(to bottom right, #f6ffed, #fff9d1);      
+    color: #000;  
+}  
 
-.logo {
-   width: 120px;
-    height: 120px;
-    border-radius: 50%; 
-    object-fit: cover; 
+/* Header section with bold black and white contrast */ 
+.header {     
+    background-color: #000;     
+    color: #fff;      
+    text-align: center;     
+    padding: 20px;     
+    border-bottom: 5px solid #ffcc00;  
+}  
+
+.logo {    
+    width: 120px;     
+    height: 120px;     
+    border-radius: 50%;      
+    object-fit: cover;      
     margin-bottom: 10px;
-}
+    border: 3px solid #fff;
+}  
 
-nav {
-    margin-top: 10px;
-}
+nav {     
+    margin-top: 10px; 
+}  
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #ffcc00; 
-    font-weight: bold;
-    font-size: 1.1em;
+nav a {     
+    margin: 0 15px;     
+    text-decoration: none;     
+    color: #ffcc00;      
+    font-weight: bold;     
+    font-size: 1.1em;     
     transition: color 0.3s ease;
+    white-space: nowrap;
+}  
+
+nav a:hover {     
+    color: #32cd32;  
+}  
+
+.products-container {     
+    max-width: 1200px;     
+    margin: 2rem auto;     
+    padding: 0 1rem; 
+}   
+
+.products-title {     
+    text-align: center;     
+    margin-bottom: 3rem; 
+}  
+
+.products-title h2 {     
+    font-size: 2rem;     
+    color: #32cd32;     
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);     
+    margin-bottom: 1rem; 
+}  
+
+.products-grid {     
+    display: grid;     
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));     
+    gap: 3rem;     
+    margin-top: 2rem;     
+}  
+
+.product-card {     
+    background: rgba(255, 255, 255, 0.95);     
+    border-radius: 20px;     
+    overflow: hidden;     
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);     
+    transition: all 0.3s ease;     
+    position: relative; 
+}   
+
+.image-gallery {     
+    position: relative;     
+    height: 300px;     
+    overflow: hidden; 
+}  
+
+.gallery-container {     
+    display: flex;     
+    transition: transform 0.5s ease;     
+    height: 100%; 
+}   
+
+.product-image {     
+    width: 100%;     
+    height: 300px;     
+    object-fit: cover;     
+    flex-shrink: 0; 
+}  
+
+.gallery-nav {     
+    position: absolute;     
+    top: 50%;     
+    transform: translateY(-50%);     
+    background: rgba(0, 0, 0, 0.7);     
+    color: white;     
+    border: none;     
+    padding: 10px;     
+    cursor: pointer;     
+    font-size: 1.2rem;     
+    border-radius: 50%;     
+    transition: all 0.3s ease;     
+    z-index: 10; 
+}  
+
+.gallery-nav:hover {     
+    background: rgba(0, 0, 0, 0.9);     
+    transform: translateY(-50%) scale(1.1); 
+}  
+
+.gallery-prev {     
+    left: 10px; 
+}  
+
+.gallery-next {     
+    right: 10px; 
+}  
+
+footer {     
+    text-align: center;     
+    background-color: #006400;
+    color: #fff;     
+    padding: 15px;     
+    margin-top: 40px;     
+    border-top: 5px solid #ffcc00;
 }
 
-nav a:hover {
-    color: #32cd32; 
-}
+/* RESPONSIVE MEDIA QUERIES */
 
-.products-container {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
- .products-title {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.products-title h2 {
-    font-size: 2rem;
-    color: #32cd32;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-    margin-bottom: 1rem;
-}
-
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
-    margin-top: 2rem;
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px;
     }
-
-.product-card {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    position: relative;
-}
-
- .image-gallery {
-    position: relative;
-    height: 300px;
-    overflow: hidden;
-}
-
-.gallery-container {
-    display: flex;
-    transition: transform 0.5s ease;
-    height: 100%;
-}
-
- .product-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    flex-shrink: 0;
-}
-
-.gallery-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    z-index: 10;
-}
-
-.gallery-nav:hover {
-    background: rgba(0, 0, 0, 0.9);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.gallery-prev {
-    left: 10px;
-}
-
-.gallery-next {
-    right: 10px;
-}
-
-footer {
-    text-align: center;
-    background-color: #006400; /* deep green */
-    color: #fff;
-    padding: 15px;
-    margin-top: 40px;
-    border-top: 5px solid #ffcc00; /* yellow accent */
-}
-.logo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: 3px solid #fff;
-}
-
-.logo {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: 3px solid #fff;
-}
-
-/* ------------------------------------------- */
-/* Media Queries for Responsiveness           */
-/* ------------------------------------------- */
-
-/* for small devices (phones, 576px and down) - these styles are already implied by the default */
-@media (max-width: 575px) {
-    header {
-        padding: 1rem; /* reduce padding even more for very small screens */
+    
+    .logo {
+        width: 100px;
+        height: 100px;
     }
+    
     nav a {
-        display: block; /* stack nav links vertically */
-        margin: 0.5rem 0; /* add vertical margin */
+        margin: 0 10px;
+        font-size: 1rem;
     }
-    h2 {
-        font-size: 1.5rem; /* smaller h2 for small screens */
+    
+    .products-container {
+        margin: 1.5rem auto;
+        padding: 0 0.75rem;
     }
-    .contact-box {
-        padding: 1rem; /* smaller padding for small screens */
+    
+    .products-title {
+        margin-bottom: 2rem;
+    }
+    
+    .products-title h2 {
+        font-size: 1.5rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+    
+    .image-gallery {
+        height: 250px;
+    }
+    
+    .product-image {
+        height: 250px;
+    }
+    
+    .gallery-nav {
+        padding: 8px;
+        font-size: 1rem;
     }
 }
 
-
-/* for medium devices (tablets, 576px and up) */
-@media (min-width: 576px) {
-    header {
-        padding: 1.5rem 2rem;
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .header {
+        padding: 12px;
     }
+    
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    nav {
+        margin-top: 15px;
+    }
+    
     nav a {
-        margin: 0 1rem;
-        display: inline-block; /* keep nav links inline */
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 0.9rem;
+        padding: 5px 10px;
+        border: 1px solid #ffcc00;
+        border-radius: 15px;
+        transition: all 0.3s ease;
     }
-    h2 {
-        font-size: 2rem;
+    
+    nav a:hover {
+        background: #ffcc00;
+        color: #000;
     }
-    .about-container {
-        flex-direction: row; /* switch to row layout for about on tablets and up */
-        text-align: left; /* align text to left when in row */
+    
+    .products-container {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
     }
-    .me img {
-        width: 180px; /* original size */
+    
+    .products-title {
+        margin-bottom: 1.5rem;
+    }
+    
+    .products-title h2 {
+        font-size: 1.3rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+    .product-card {
+        border-radius: 15px;
+    }
+    
+    .image-gallery {
+        height: 200px;
+    }
+    
+    .product-image {
+        height: 200px;
+    }
+    
+    .gallery-nav {
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-prev {
+        left: 5px;
+    }
+    
+    .gallery-next {
+        right: 5px;
+    }
+    
+    footer {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+    .header {
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    nav a {
+        margin: 3px 5px;
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+    
+    .products-title h2 {
+        font-size: 1.1rem;
+    }
+    
+    .products-grid {
+        gap: 1rem;
+    }
+    
+    .image-gallery {
         height: 180px;
-        margin-right: 2rem; /* space to the right of the image */
-        margin-bottom: 0; /* remove bottom margin when in row */
     }
-}
-
-/* for large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    header {
-        padding: 2rem 3rem; /* more padding for large screens */
+    
+    .product-image {
+        height: 180px;
     }
-    nav a {
-        margin: 0 1.5rem;
-    }
-    section {
-        padding: 2rem; /* original padding */
-    }
-    h2 {
-        font-size: 2.2rem;
-    }
-}
-
-/* for extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    section {
-        padding: 2.5rem;
-    }
-    h2 {
-        font-size: 2.5rem;
+    
+    .gallery-nav {
+        padding: 5px;
+        font-size: 0.8rem;
     }
 }
