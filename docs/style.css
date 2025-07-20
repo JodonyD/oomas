@@ -231,3 +231,44 @@ footer {
     font-size: 16px;
     cursor: pointer;
 }
+
+/* tablet styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px;
+    }
+    
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    nav a {
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+    
+    footer {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+/* very small screens */
+@media (max-width: 320px) {
+    .header {
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+    
+    nav a {
+        margin: 3px 5px;
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+    
+}
