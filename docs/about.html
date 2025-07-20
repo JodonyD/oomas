@@ -29,12 +29,13 @@
         <h2>About</h2>
         <p>Welcome to Oomas Jamaican Goodies, where tradition meets taste!</p>
         <p>Founded in 2021, Oomas Jamaican Goodies was born out of a deep love for authentic Jamaican baking and a desire to share that joy with others.</p>
-        <p>We specialize in mouthwatering homemade treats like **_banana bread, carrot cake, fruit cake, and sweet potato pudding_** all made with love, care, and the rich flavors of the island.</p>
-        <p>At Oomas, we believe in keeping things natural. That's why we never use **preservatives** in any of our products. Every bite is fresh, wholesome, and packed with the comforting taste of home.</p>
+        <p>We specialize in mouthwatering homemade treats like <b><i>banana bread, carrot cake, fruit cake, and sweet potato pudding</i></b> all made with love, care, and the rich flavors of the island.</p>
+        <p>At Oomas, we believe in keeping things natural. That's why we never use <b>preservatives</b> in any of our products. Every bite is fresh, wholesome, and packed with the comforting taste of home.</p>
         <p>Whether you're celebrating a special occasion or simply treating yourself, our baked goods bring a little bit of Jamaica to every table.</p>
         <p>Come taste the difference — made by Ooma, with love 🇯🇲</p>
     </div>
 
+    <!--Products-->
     <div class="products">
         <h2>Our Products</h2>
         <div class="product-gallery">
@@ -53,40 +54,34 @@
         </div>
     </div>
 
-    <div style="height: 1000px; background-color: #f2f2f2; padding: 20px; text-align: center;">
-        <p>Scroll down to see the back to top button appear!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    
-    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button> <!--button to go back to top-->
 
+    <!-- Footer -->
     <footer class="foot">
         <hr>
         <p>&copy; 2025 Oomas Jamaican Goodies. All rights reserved</p>
     </footer>
 
     <script>
-        // get the button
-        let mybutton = document.getElementById("myBtn");
+    // get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // when the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
-        // when the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
         }
+    }
 
-        // when the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // for Safari
-            document.documentElement.scrollTop = 0; // For chrome, firefox, IE and Opera
-        }
+    // when the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // for Safari
+        document.documentElement.scrollTop = 0; // For chrome, firefox, IE and Opera
+    }
     </script>
 
 </body>
