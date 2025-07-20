@@ -1,8 +1,3 @@
-/* Box-sizing for better responsive behavior */
-* {
-    box-sizing: border-box;
-}
-
 /* General body style with a soft green-yellow gradient background */
 body {
     font-family: Arial, sans-serif;
@@ -31,6 +26,7 @@ body {
     background-color: #fff; /* optional: ensures clean edges */
 }
 
+
 /* Navigation bar with bold white/yellow links */
 nav {
     margin-top: 10px;
@@ -43,19 +39,10 @@ nav a {
     font-weight: bold;
     font-size: 1.1em;
     transition: color 0.3s ease;
-    white-space: nowrap;
 }
 
 nav a:hover {
     color: #32cd32; /* lime green hover */
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;  /* center horizontally */
-    gap: 20px; /* space between logo and text */
-    padding: 20px 0;
 }
 
 /* About section */
@@ -107,6 +94,15 @@ nav a:hover {
     color: #000;
 }
 
+footer {
+    text-align: center;
+    background-color: #006400; /* deep green */
+    color: #fff;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 5px solid #ffcc00; /* yellow accent */
+}
+
 /* Center the contact box */
 #contact {
     display: flex;
@@ -145,6 +141,16 @@ nav a:hover {
 .contact-box i {
     margin-right: 10px;
     color: #000;
+}
+
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* center horizontally */
+    gap: 20px; /* space between logo and text */
+    padding: 20px 0;
 }
 
 /* === Order Form Section === */
@@ -226,220 +232,3 @@ nav a:hover {
     cursor: pointer;
 }
 
-footer {
-    text-align: center;
-    background-color: #006400; /* deep green */
-    color: #fff;
-    padding: 15px;
-    margin-top: 40px;
-    border-top: 5px solid #ffcc00; /* yellow accent */
-}
-
-/* RESPONSIVE MEDIA QUERIES */
-
-/* Tablet Styles */
-@media (max-width: 768px) {
-    .header {
-        padding: 15px;
-    }
-    
-    .logo {
-        width: 100px;
-        height: 100px;
-    }
-    
-    nav a {
-        margin: 0 10px;
-        font-size: 1rem;
-    }
-    
-    .header-content {
-        gap: 15px;
-        padding: 15px 0;
-    }
-    
-    .about,
-    .products {
-        padding: 20px;
-        margin: 15px auto;
-        max-width: 95%;
-    }
-    
-    .product-gallery {
-        gap: 20px;
-    }
-    
-    .product img {
-        width: 180px;
-    }
-    
-    #contact {
-        padding: 30px 15px;
-    }
-    
-    .contact-box {
-        padding: 25px 30px;
-        max-width: 90%;
-    }
-    
-    .contact-box p {
-        font-size: 16px;
-    }
-    
-    .form {
-        padding: 40px 15px;
-    }
-    
-    .form form {
-        padding: 30px;
-        max-width: 90%;
-    }
-}
-
-/* Mobile Styles */
-@media (max-width: 480px) {
-    .header {
-        padding: 12px;
-    }
-    
-    .logo {
-        width: 80px;
-        height: 80px;
-    }
-    
-    nav {
-        margin-top: 15px;
-    }
-    
-    nav a {
-        display: inline-block;
-        margin: 5px 8px;
-        font-size: 0.9rem;
-        padding: 8px 12px;
-        border: 1px solid #ffcc00;
-        border-radius: 15px;
-        transition: all 0.3s ease;
-    }
-    
-    nav a:hover {
-        background: #ffcc00;
-        color: #000;
-    }
-    
-    .header-content {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px 0;
-    }
-    
-    .about,
-    .products {
-        padding: 15px;
-        margin: 10px;
-        max-width: 95%;
-    }
-    
-    .products h2 {
-        font-size: 1.3rem;
-    }
-    
-    .product-gallery {
-        gap: 15px;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .product img {
-        width: 160px;
-    }
-    
-    #contact {
-        padding: 20px 10px;
-        min-height: 50vh;
-    }
-    
-    .contact-box {
-        padding: 20px 25px;
-        max-width: 95%;
-    }
-    
-    .contact-box h2 {
-        font-size: 1.3rem;
-    }
-    
-    .contact-box p {
-        font-size: 14px;
-    }
-    
-    .form {
-        padding: 30px 10px;
-        min-height: 50vh;
-    }
-    
-    .form form {
-        padding: 25px;
-        max-width: 95%;
-    }
-    
-    .form h2 {
-        font-size: 1.3rem;
-    }
-    
-    .form input,
-    .form textarea {
-        font-size: 14px;
-        padding: 10px;
-    }
-    
-    .form button,
-    .b {
-        font-size: 14px;
-        padding: 10px 16px;
-    }
-    
-    footer {
-        padding: 12px;
-        font-size: 0.9rem;
-    }
-}
-
-/* Very small screens */
-@media (max-width: 320px) {
-    .header {
-        padding: 10px;
-    }
-    
-    .logo {
-        width: 70px;
-        height: 70px;
-    }
-    
-    nav a {
-        margin: 3px 5px;
-        font-size: 0.8rem;
-        padding: 6px 10px;
-    }
-    
-    .about,
-    .products {
-        padding: 12px;
-        margin: 8px;
-    }
-    
-    .product img {
-        width: 140px;
-    }
-    
-    .contact-box {
-        padding: 15px 20px;
-    }
-    
-    .form form {
-        padding: 20px;
-    }
-    
-    .form input,
-    .form textarea {
-        padding: 8px;
-    }
-}
