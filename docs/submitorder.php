@@ -70,16 +70,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        // Your Gmail address (this will be the 'sender' or 'from' email from your website)
         $mail->Username   = 'jodonydunn@gmail.com';
-        // IMPORTANT: Use the App Password you generated, NOT your regular Gmail password!
-        $mail->Password   = 'vylq vidk tgth cymh'; 
+        $mail->Password   = 'vylq vidk tgth cymh'; //app password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use ENCRYPTION_SMTPS for port 465 if you prefer
         $mail->Port       = 587; // Or 465 for SMTPS
 
         $mail->setFrom('jodonydunn@gmail.com', 'Oomas Jamaican Goodies Website');
-        // Add the recipient where you want to receive the order notification
-        $mail->addAddress('jodonyd13@gmail.com'); //
+        $mail->addAddress('dunnalice9@gmail.com'); //
 
         // Content
         $mail->isHTML(false); // Set to true if you want to send HTML emails
